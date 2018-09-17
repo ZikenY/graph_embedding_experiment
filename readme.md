@@ -1,15 +1,16 @@
 ## Graph embedding and clustering experiment<br />
 
 ### --- Objective ---<br />
-Find the relations between node2vec’s parameters(p, q) and the embedded results in “structural role” style and “connectivity” style.
+Find the relations between node2vec’s parameters(p, q) and the embedded results in “structural role” style and “connectivity” style. <br />
+Use networkx to visualize the embedding result.
 
 ### --- node2vec model ---<br />
 [node2vec: Scalable Feature Learning for Networks](https://cs.stanford.edu/people/jure/pubs/node2vec-kdd16.pdf)
 ![Alt text]( png/search_strategies.png?raw=true "")<br />
 ![Alt text]( png/bias.png?raw=true "")<br />
 
-### Tools and Experimental steps:<br />
-need node2vec, networkx, gensim.<br />
+### --- Tools and Experimental steps ---<br />
+#### Need node2vec scripts, networkx, gensim.<br />
 
 step1. Use Node2vec algorithm for embedding each vertex in a graph to a vector;<br />
 step2. Use k-means algorithm to divide the vertices(vectors) into clusters;<br />
@@ -59,7 +60,7 @@ BFS/DFS preference parameters p and q are not the key factors in this case. I al
 When I design the graph, I found out that within each one of the three groups, all nodes cannot connect each other but can only connect to the local hub (node 21, 22 and 23). Otherwise the result becomes  unstable, no matter how I adjust all parameters.<br /><br />
 
 
-### --- Tricky behavior ---<br />
+### --- Tricky behaviors ---<br />
 I connected some nodes with each one of three groups in original graph...<br />
 modified graph(24 vertices and 9modified_structural_role0 edges):<br />
 ![Alt text]( png/modified_graph.png?raw=true "")<br />
@@ -74,3 +75,4 @@ Most nodes are embedded meaningless.<br />
 ![Alt text]( png/modified_structural_role.png?raw=true "")<br />
 The only evidence is that the three global hubs are embedded closely. Other nodes are embedded meaningless.<br />
 
+Need more experiments!
