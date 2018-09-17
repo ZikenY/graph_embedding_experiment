@@ -2,7 +2,7 @@
 
 ### --- Objective ---<br />
 Find the relations between node2vec’s parameters(p, q) and the embedded results in “structural role” style and “connectivity” style. <br />
-Use networkx to visualize the embedding result.
+Use networkx to visualize the embedding results.
 
 ### --- node2vec model ---<br />
 [node2vec: Scalable Feature Learning for Networks](https://cs.stanford.edu/people/jure/pubs/node2vec-kdd16.pdf)
