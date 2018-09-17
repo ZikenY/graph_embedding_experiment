@@ -22,9 +22,9 @@ edge#: 72<br />
 
 Visualization of graph data (Yellow ones are local hubs; Pink ones are global hubs): <br />
 ![Alt text]( png/graph.png?raw=true "")<br />
-Nodes 3~8 are connected by node 21;<br />
-Nodes 9~14 are connected by node 22;<br />
-Nodes 15~20 are connected by node 23;<br />
+Nodes 3-8 are connected by node 21;<br />
+Nodes 9-14 are connected by node 22;<br />
+Nodes 15-20 are connected by node 23;<br />
 Within any one of those three group, nodes are not connected with each other.<br />
 Node 21, 22 and 23 are “local hubs” within each group respectively.<br />
 Nodes 0, 1, 2 are “global hubs” that connect to all three groups except Node 21, 22 and 23.<br /><br />
