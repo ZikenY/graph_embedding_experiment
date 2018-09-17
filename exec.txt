@@ -1,0 +1,6 @@
+tt3.txt: based on connectivity:
+python src/main.py --input emb/tt.txt --output emb/tt.txt.emd --dimensions 128 --walk-length 10 --num-walks 300 --window-size 3 --unweighted --undirected --p 1 --q 1 --workers 6
+
+tt3.txt: based on structural:
+python src/main.py --input emb/tt.txt --output emb/tt.txt.emd --dimensions 128 --walk-length 5 --num-walks 300 --window-size 1 --unweighted --undirected --p 1 --q 1 --workers 6
+
